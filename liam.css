@@ -142,7 +142,11 @@ h1 {
 	z-index:998;
 }
 
-@media screen and (max-width: 736px){ 
+@media screen and (max-width: 736px){
+
+  html, body {
+    overflow: hidden;
+  }
 
 		.project {
 		border-radius: 0px 0px 0px 0px !important;
