@@ -1,0 +1,163 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-scrollbar {
+    display: none;
+}
+
+
+html {
+	margin: 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.title,.year {
+	position: relative;
+	text-align: left;
+	left:0;
+}
+
+.title > p {
+	position: relative;
+	margin-left: 0;
+}
+
+.title {
+	padding: 4%;
+	top: 0 !important;
+	margin-top: 0;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 0;
+	font-size: 25;
+}
+
+.open {
+	font-weight: 300;
+	position: fixed;
+	margin: 0;
+	top: -5px;
+	right: 50.5vw;
+	font-size: 40;
+	cursor: pointer;
+	z-index: 999;
+	transform: rotate(45deg);
+}
+
+.images > section > img {
+	display: none;
+	width: 100%;
+	height: auto;
+	margin-top: 5px;
+	z-index: 0;
+}
+
+.desc {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	position: relative;
+	display: none;
+	width: 92%;
+	left: 4%;
+	font-size: 18;
+}
+
+.thumb > img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	left: 0;
+}
+
+.project {
+	border-radius: 8px 8px 0px 0px;
+	cursor: move;
+	margin: 0;
+	/*border: solid;
+  	border-width: 3vh 0vh 0vh 0vh;*/
+	overflow: hidden;
+	overflow-x: hidden;
+	background-color: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	float: left;
+	width: 20vw;
+	height: auto;
+	-webkit-transition: padding .3s;
+ 	-moz-transition: padding .3s;
+ 	-o-transition: padding .3s;
+}
+
+.project:hover {
+	border-color: #e0e0e0;
+  z-index: 999 !important;
+}
+
+.cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	z-index: 999;
+}
+
+.load {
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+}
+
+.big {
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 0px 0px 0px 0px !important;
+	cursor: default;
+	border: none;
+	border-right: .5vh solid;
+	background-color: white:
+	position: relative;
+	height: 100vh;
+	left: 0 !important;
+	top: 0 !important;
+	width: 50vw;
+	overflow: scroll;
+	z-index:998;
+}
+
+@media screen and (max-width: 736px){ 
+
+		.project {
+		border-radius: 0px 0px 0px 0px !important;
+		-webkit-transition: height .5s;
+  		-moz-transition: height .5s;
+  		-o-transition: height .5s;
+		}
+
+		.title {
+			margin-bottom: 0;
+		}
+
+		.project:last-child {
+			border-bottom: 2px solid black !important;
+		}
+
+
+	}
