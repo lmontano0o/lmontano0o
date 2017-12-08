@@ -57,9 +57,12 @@ Prismic.Api('https://liammontano.prismic.io/api', function (err, Api) {
 
     if ($(window).width() < 734 ){
 
+      $("html,body").css("overflow","hidden");
+
       $('html,body').imagesLoaded( function() {
 
       $(".cover").fadeOut();
+      $("html,body").css("overflow","scroll");
 
       });
 
